@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive image slider built with vanilla JavaScript">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+
+<body>
+    <main class="page">
+        <header class="page-header">
+            <h1>Explore the World</h1>
+            <p>A responsive image slider using HTML, CSS, and JavaScript</p>
+        </header>
+
+        <section class="slider" aria-label="Image gallery">
+            <div class="slider-viewport">
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85"
+                            alt="Mountain lake surrounded by green hills">
+                        <div class="slide-caption">
+                            <h2>Beautiful Mountains</h2>
+                            <p>Discover the beauty of nature.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=85"
+                            alt="Scenic landscape under a colorful sky">
+                        <div class="slide-caption">
+                            <h2>Natural Wonders</h2>
+                            <p>Experience peaceful landscapes.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85"
+                            alt="Ocean waves reaching the shore">
+                        <div class="slide-caption">
+                            <h2>Ocean Adventures</h2>
+                            <p>Enjoy the rhythm of the ocean.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=85"
+                            alt="Snow-covered mountain beneath a starry sky">
+                        <div class="slide-caption">
+                            <h2>Night Sky</h2>
+                            <p>Find inspiration in the universe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-button prev" type="button" aria-label="Previous slide">
+                    &#10094;
+                </button>
+                <button class="slider-button next" type="button" aria-label="Next slide">
+                    &#10095;
+                </button>
+                <span class="slide-counter" aria-live="polite"></span>
+            </div>
+
+            <div class="slider-dots" aria-label="Choose a slide"></div>
+        </section>
+
+        <footer>
+            <p>Image Slider Library | CSE 230</p>
+        </footer>
+    </main>
+</body>
+
+</html>
